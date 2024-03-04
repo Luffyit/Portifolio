@@ -1,0 +1,209 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css);
+:root{
+    /* Dark ModeColor  */
+    --dark-main-color: #1C1D26;
+    --dark-secondary-color: #0F2027;
+    --dark-details-color: crimson;
+    --dark-backgrond-color:radial-gradient(#0F2027 , #203A43);
+    --dark-header-color: #F4F3F7;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--dark-details-color);
+    border-radius: 8px;
+}
+::-webkit-scrollbar{
+    width:12px;
+    background-color:  transparent;
+}
+::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100vw;
+    min-height: 100vh;
+    background-color: var(--dark-main-color);
+    background:var(--dark-backgrond-color);
+    margin: 0;
+    padding: 0;
+    font-family: 'JetBrains Mono',sans-serif;
+}
+.light-mode{
+    background: var(--dark-header-color);
+}
+header{
+    display: flex; 
+    justify-content: space-between;
+    width: 100%;
+    height: 75px;
+    background-color: var(--dark-header-color);
+    align-items: center;
+    box-shadow: 0px 5px 30px var(--dark-details-color);
+    border-bottom: 1px solid var(--dark-details-color);
+}
+h1{
+    font-family: 'JetBrains Mono';
+    font-weight: 800;
+    margin-left: 150px;
+    text-decoration:underline var(--dark-details-color);
+    animation: reload 0.3s linear forwards;
+}
+li{
+    display: flex;
+    animation: reload 0.4s linear forwards;
+}
+ol{
+    margin: 0;
+    padding: 10px;
+}
+a{
+    color: var(--dark-details-color);
+    text-decoration: underline;
+    transition: 0.6s opacity;
+}
+a:hover{
+    opacity: 0.6;
+}
+.nav-right{
+    margin-right: 150px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 18px;
+    border-left: 1px solid var(--dark-main-color);
+}
+.options{
+    display: flex;
+}
+.dark-mode{
+    display: flex;
+    width: 45px;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--dark-main-color);
+    border-radius: 8px;
+    animation: reload 0.4s linear forwards;
+}
+#mode-icon{
+    font-size: 35px;
+    transition: 0.5s color;
+    cursor: pointer;
+}
+#mode-icon:hover{
+    color: var(--dark-details-color);
+    
+}
+
+.a-ol{
+    color: var(--dark-secondary-color);
+    text-decoration: none;
+    transition: 0.7s color;
+}
+.a-ol:hover{
+    color: var(--dark-details-color);
+}
+.content{
+    display: flex;
+    align-items: center;
+    width: 65vw;
+    margin-top: 80px;
+    gap: 80px;
+    color: aliceblue;
+    margin-bottom: 150px;
+}
+#about-icon{
+    font-size: 250px;
+    animation: reload 0.35s linear forwards;
+}
+.content-rigth{
+    display: flex;
+    flex-direction: column;
+    animation: reload 0.35s linear forwards;        
+}
+.about-me{
+    background-color: var(--dark-details-color);
+    margin: 30px 0px;
+    padding: 7px;
+    width: 90px;
+    height: 20px;
+    border-radius: 8px;
+    animation: reload 0.35s linear forwards;
+    cursor:default;
+}
+h3{
+    font-size: 22px;
+    padding: 0;
+    margin: 0;
+}
+.text{
+    font-size: 16px;
+    padding: 8px;
+    letter-spacing: 1px;
+    border-bottom: 1px solid var(--dark-header-color);
+    cursor: default;
+}
+.projects-content{
+    width: 65vw;
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+.cards{
+    background-color: var(--dark-main-color);
+    opacity: 0.8;
+    color: #fff;
+    border: 1px solid var(--dark-header-color);
+    border-radius: 8px;
+    width: 31%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 8px 8px 16px #000;
+    transition: 0.5s;
+}
+.cards:hover{
+    cursor: pointer;
+    width: 35%;
+}
+.img{
+    background-image:url('assets/code.jpg') ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;;
+    width: 95%;
+    height: 40%;
+    margin: 5px;
+    border-radius: 8px;
+}
+.card-title{
+    display:flex;
+    color: var(--dark-header-color);
+    width: 95%;
+    height: max-content;
+    align-items: center;
+    flex-direction: column;
+    font-size: 20px;
+}
+.card-title::before{
+    content: "";
+    background-color: var(--dark-header-color);
+    width: 90%;
+    height: 1px;
+    margin: 5px auto;
+    border-radius: 1px;
+    display: block;
+}   
+@keyframes reload {
+    from{
+        opacity: 0;
+        transform: translateY(-25px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
