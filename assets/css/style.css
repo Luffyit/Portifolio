@@ -71,6 +71,7 @@ ol{
     align-items: center;
     gap: 20px;
     font-size: 18px;
+    color: var(--dark-main-color);
 }
 .nav-right:before{
     content: "";
@@ -78,8 +79,10 @@ ol{
     width: 1px;
     height: 40px;
     border-radius: 8px;
-    background-color: var(--dark-main-color);
-    
+    background-color: currentColor;    
+}
+.light_nav-right{
+    color: var(--dark-header-color);
 }
 .toggle-btn{
     display: flex;
