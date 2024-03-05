@@ -3,20 +3,22 @@
     /* Color Scheme  */
     --dark-main-color: #1C1D26;
     --dark-secondary-color: #0F2027;
-    --dark-details-color: crimson;
-    --dark-backgrond-color:radial-gradient(#0F2027 , #203A43);
-    --dark-header-color: #F4F3F7;
+    --details-color: crimson;
+    --dark-background-color:radial-gradient(#0F2027 , #203A43);
+    --white-background-color:radial-gradient(#F4F3F7 , #e3e3e6);
+    --white-main-color: #F4F3F7;
+    --white-secondary-color: #F4F3F7;
 
 }
 ::-webkit-scrollbar-thumb{
-    background-color: var(--dark-details-color);
-    border-radius: 8px;
+    background-color: var(--details-color);
+    border-radius: 2px;
 }
 ::-webkit-scrollbar{
     width:12px;
 }
 ::-webkit-scrollbar-track{
-    background-color: transparent;
+    background: var(--white-background-color)
 }
 body{
     display: flex;
@@ -25,13 +27,14 @@ body{
     max-width: 100vw;
     min-height: 100vh;
     background-color: var(--dark-main-color);
-    background:var(--dark-backgrond-color);
+    background:var(--dark-background-color);
     margin: 0;
     padding: 0;
+    gap: 80px;
     font-family: 'JetBrains Mono',sans-serif;
 }
 body.light{
-    background: var(--dark-header-color);
+    background: var(--white-main-color);
     color: var(--dark-main-color);
 }
 header{
@@ -39,27 +42,27 @@ header{
     justify-content: space-between;
     width: 100%;
     height: 75px;
-    background-color: var(--dark-header-color);
+    background-color: var(--white-main-color);
     align-items: center;
-    box-shadow: 0px 5px 30px var(--dark-details-color);
-    border-bottom: 1px solid var(--dark-details-color);
+    box-shadow: 0px 5px 30px var(--details-color);
+    border-bottom: 1px solid var(--details-color);
 }
 .light_header{
     background-color: var(--dark-main-color);
-    color: var(--dark-header-color);
+    color: var(--white-main-color);
 }
 
 h1{
     font-family: 'JetBrains Mono';
     font-weight: 800;
     margin-left: 150px;
-    text-decoration:underline var(--dark-details-color);
+    text-decoration:underline var(--details-color);
     animation: reload 0.3s linear forwards;
 }
 li{
     display: flex;
     animation: reload 0.4s linear forwards;
-    color: #fff;    
+    color: var(--white-main-color);    
 }
 ol{
     margin: 0;
@@ -82,7 +85,7 @@ ol{
     background-color: currentColor;    
 }
 .light_nav-right{
-    color: var(--dark-header-color);
+    color: var(--white-main-color);
 }
 .toggle-btn{
     display: flex;
@@ -95,7 +98,7 @@ ol{
     animation: reload 0.4s linear forwards;
 }
 .light_toggle-btn{
-    border: 1px solid var(--dark-header-color);
+    border: 1px solid var(--white-main-color);
 }
 #mode-icon{
     font-size: 35px;
@@ -103,7 +106,7 @@ ol{
     cursor: pointer;
 }
 #mode-icon:hover{
-    color: var(--dark-details-color);   
+    color: var(--details-color);   
 }
 .a{
     color: var(--dark-secondary-color);
@@ -111,10 +114,10 @@ ol{
     transition: 0.7s color;
 }
 .a:hover{
-    color: var(--dark-details-color);
+    color: var(--details-color);
 }
 .a_light{
-    color: var(--dark-header-color);
+    color: var(--white-main-color);
     text-decoration: none;
     transition: 0.7s color;
 }
@@ -124,11 +127,10 @@ ol{
     width: 65vw;
     margin-top: 80px;
     gap: 80px;
-    color: var(--dark-header-color);
-    margin-bottom: 150px;
+    color: var(--white-main-color);
 }
 .light_content{
-    color: var(--dark-main-color);
+    color: #000;
 }
 #about-icon{
     font-size: 250px;
@@ -140,7 +142,7 @@ ol{
     animation: reload 0.35s linear forwards;        
 }
 .about-me{
-    background-color: var(--dark-details-color);
+    background-color: var(--details-color);
     margin: 30px 0px;
     padding: 7px;
     width: 90px;
@@ -158,20 +160,19 @@ h3{
     font-size: 16px;
     padding: 8px;
     letter-spacing: 1px;
-    border-bottom: 1px solid var(--dark-header-color);
+    border-bottom: 1px solid var(--white-main-color);
     cursor: default;
 }
 .projects-content{
     width: 65vw;
     display: flex;
-    margin-top: 50px;
     justify-content: space-between;
 }
 .cards{
     background-color: var(--dark-main-color);
     opacity: 0.8;
     color: #fff;
-    border: 1px solid var(--dark-header-color);
+    border: 1px solid var(--white-main-color);
     border-radius: 8px;
     width: 31%;
     height: 400px;
@@ -197,7 +198,7 @@ h3{
 }
 .card-title{
     display:flex;
-    color: var(--dark-header-color);
+    color: var(--white-main-color);
     width: 95%;
     height: max-content;
     align-items: center;
@@ -206,13 +207,23 @@ h3{
 }
 .card-title::before{
     content: "";
-    background-color: var(--dark-header-color);
+    background-color: var(--white-main-color);
     width: 90%;
     height: 1px;
     margin: 5px auto;
     border-radius: 1px;
     display: block;
 }   
+footer{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 75px;
+    background-color: var(--white-main-color);
+    box-shadow: 0px -5px 30px var(--details-color);
+    border-top: 1px solid var(--details-color);
+}
 @keyframes reload {
     from{
         opacity: 0;
