@@ -102,14 +102,6 @@ ol{
 #mode-icon:hover{
     color: var(--dark-details-color);   
 }
-.a_light{
-    color: var(--dark-header-color);
-    text-decoration: none;
-    transition: 0.7s color;
-}
-.a_light:hover{
-    color: var(--dark-details-color);
-}
 .a{
     color: var(--dark-secondary-color);
     text-decoration: none;
@@ -117,6 +109,11 @@ ol{
 }
 .a:hover{
     color: var(--dark-details-color);
+}
+.a_light{
+    color: var(--dark-header-color);
+    text-decoration: none;
+    transition: 0.7s color;
 }
 .content{
     display: flex;
