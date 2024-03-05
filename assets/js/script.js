@@ -4,12 +4,11 @@ const header = document.querySelector('header')
 const nav = document.querySelector('nav.nav-right')
 const links = document.querySelectorAll('.a')
 const container = document.querySelector('.content')    
-console.log(nav)
         mode.addEventListener('click', clicked)
         function clicked(){
             if (mode.classList.contains('fa-sun')){
                 mode.classList.toggle('fa-moon')
-                body.classList.toggle('light')
+                body.classList.toggle('light_body')
                 header.classList.toggle('light_header')
                 container.classList.toggle('light_content')
                 nav.classList.toggle('light_nav-right')
