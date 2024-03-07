@@ -12,7 +12,6 @@ const container = document.querySelector('.content')
                 header.classList.toggle('light_header')
                 container.classList.toggle('light_content')
                 nav.classList.toggle('light_nav-right')
-                console.log('aqui')
                 for (let c = 0; c < links.length; c++)
                     links[c].classList.toggle('a_light')
             }
