@@ -110,12 +110,7 @@ ol{
     height: 45px;
     align-items: center;
     justify-content: center;
-    border: 1px solid var(--dark-main-color);
-    border-radius: 8px;
     animation: reload 0.4s linear forwards;
-}
-.light_toggle-btn{
-    border: 1px solid var(--white-main-color);
 }
 .fa-sun,
 .fa-moon
@@ -123,6 +118,13 @@ ol{
     font-size: 35px;
     transition: 0.5s color;
     cursor: pointer;
+    border: 1px solid var(--dark-main-color);
+    border-radius: 8px;
+    padding: 0.5rem;
+}
+.fa-moon{
+    border-color: var(--white-main-color);
+    padding: 0.5rem 0.8rem;
 }
 .fa-sun:hover,
 .fa-moon:hover
@@ -138,7 +140,7 @@ ol{
     display: flex;
     align-items: center;
     width: 65vw;
-    margin-top: 80px;
+    margin-top: 1em;
     gap: 80px;
     color: var(--white-main-color);
 }
@@ -259,6 +261,14 @@ h3 b{
     color: var(--white-main-color);
     text-decoration: none;
 }
+.light-contact, .light-contact i, .light-contact a, .light-contact p{
+    color: var(--dark-background-color);
+}
+.light-contact a:hover{
+    color: var(--details-color);
+    transform: scale(1.1);
+    transition: 0.3s;
+}
 .curiosity{
     border: 1px solid var(--white-main-color);
     border-radius: 8px;
@@ -279,6 +289,14 @@ h3 b{
     top: -2rem;
     left: 1rem;
 }
+.light-curiosity, .light-curiosity .curiosity-text{
+    border-color:var(--dark-main-color);
+    color: var(--dark-main-color);
+}
+.light-curiosity::before{
+    background-color: var(--white-main-color);
+    color: var(--dark-main-color);
+}
 footer{
     width: 100%;
     height: 75px;
@@ -288,6 +306,15 @@ footer{
     padding: 0px 150px;
     gap: 1rem;
     background-color: var(--white-main-color);
+}
+.light-footer, .light-footer a{
+    background-color: var(--dark-main-color);
+    color: var(--white-main-color);
+}
+.light-footer a:hover{
+    color: var(--details-color);
+    transform: scale(1.1);
+    transition: 0.3s;
 }
 .fa-square-github{
     font-size: 3rem;
