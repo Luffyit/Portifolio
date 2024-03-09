@@ -255,6 +255,7 @@ h3 b{
     font-family: "JetBrains Mono";
     color: var(--white-main-color);
     text-decoration: none;
+    cursor: pointer;
 }
 
 .curiosity{
