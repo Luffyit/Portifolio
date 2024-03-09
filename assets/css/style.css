@@ -64,6 +64,7 @@ header{
 h1{
     font-family: 'JetBrains Mono';
     font-weight: 800;
+    color: var(--dark-main-color);
     text-decoration:underline var(--details-color);
     animation: reload 0.3s linear forwards;
 }
@@ -73,7 +74,7 @@ li{
     color: var(--white-main-color);    
 }
 a{
-    color: var(--dark-secondary-color);
+    color: var(--dark-main-color);
     text-decoration: none;
     transition: 0.7s color;
 }
@@ -99,10 +100,7 @@ ol{
     width: 1px;
     height: 40px;
     border-radius: 8px;
-    background-color: currentColor;    
-}
-.light_nav-right{
-    color: var(--white-main-color);
+    background-color: var(--dark-main-color);    
 }
 .toggle-btn{
     display: flex;
@@ -123,18 +121,12 @@ ol{
     padding: 0.5rem;
 }
 .fa-moon{
-    border-color: var(--white-main-color);
     padding: 0.5rem 0.8rem;
 }
 .fa-sun:hover,
 .fa-moon:hover
 {
     color: var(--details-color);   
-}
-.a_light{
-    color: var(--white-main-color);
-    text-decoration: none;
-    transition: 0.7s color;
 }
 .content{
     display: flex;
@@ -143,9 +135,6 @@ ol{
     margin-top: 1em;
     gap: 80px;
     color: var(--white-main-color);
-}
-.light_content{
-    color: #000;
 }
 .fa-user{
     font-size: 250px;
@@ -261,14 +250,7 @@ h3 b{
     color: var(--white-main-color);
     text-decoration: none;
 }
-.light-contact, .light-contact i, .light-contact a, .light-contact p{
-    color: var(--dark-background-color);
-}
-.light-contact a:hover{
-    color: var(--details-color);
-    transform: scale(1.1);
-    transition: 0.3s;
-}
+
 .curiosity{
     border: 1px solid var(--white-main-color);
     border-radius: 8px;
@@ -289,14 +271,6 @@ h3 b{
     top: -2rem;
     left: 1rem;
 }
-.light-curiosity, .light-curiosity .curiosity-text{
-    border-color:var(--dark-main-color);
-    color: var(--dark-main-color);
-}
-.light-curiosity::before{
-    background-color: var(--white-main-color);
-    color: var(--dark-main-color);
-}
 footer{
     width: 100%;
     height: 75px;
@@ -306,18 +280,11 @@ footer{
     padding: 0px 150px;
     gap: 1rem;
     background-color: var(--white-main-color);
-}
-.light-footer, .light-footer a{
-    background-color: var(--dark-main-color);
-    color: var(--white-main-color);
-}
-.light-footer a:hover{
-    color: var(--details-color);
-    transform: scale(1.1);
-    transition: 0.3s;
+    color: var(--dark-main-color);
 }
 .fa-square-github{
     font-size: 3rem;
+    color: var(--dark-main-color);
 }
 @keyframes reload {
     from{
