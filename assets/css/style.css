@@ -10,6 +10,12 @@
     --white-secondary-color: #c8c8ca;
 
 }
+.light{
+    --dark-main-color: #F4F3F7;
+    --dark-secondary-color: #c8c8ca;
+    --white-main-color: #1C1D26;
+    --white-secondary-color: #0F2027;
+}
 ::-webkit-scrollbar-thumb{
     background-color: #aaa;
     border-radius: 2px;
